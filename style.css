@@ -1,4 +1,14 @@
 
+body {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 header {
     top: 0;
     left: 0;
@@ -66,13 +76,6 @@ header {
    }
 .botoes {
     display: inline-block;
-    top: 50px;
-    float: right;
-    margin-right: 20px;
-    margin-top: 0px;
-    padding: 0px;
-    border-top: 0px;
-    margin-bottom: 50px;
 }
 
 .texto1{
@@ -120,40 +123,18 @@ header {
 
 .superiorBaixo {
     background-color: rgb(40, 81, 62);
-    background-size: contain;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    float: left;
+    padding: 50px;
+    display: flex;
 }
 .foto {
-    margin-right: 800px;
-    top: 300px;
-    float: left;
-    width:290px;
-    position: relative;
-   
+    flex: 1;
 }
 .descricao {
-    margin-left: 500px;
-    margin-right: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: aliceblue;
     text-align: justify;
     text-size-adjust: unset;
-    display: inline-block;
-    text-decoration: dotted;
-    float: right;
-    position: relative;
-    
-}
-.foto, .descricao {
-    top: 0px;
-    bottom: 300px;
-    display: inline-block;
-    align-items: center;
+    flex: 3;
 }
 .charme, .charme2{
     background-color: aliceblue;
@@ -163,13 +144,12 @@ header {
     margin-bottom: 20px;
     
 }
-h2{
-    color: rgb(43, 79, 43);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.marca {
+    color: black;
+    margin: 0;
 }
+
 .seletividade {
     background-color: rgb(40, 81, 62);
     margin-top: 0px;
