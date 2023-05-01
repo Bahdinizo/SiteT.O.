@@ -1,0 +1,79 @@
+* {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    background-color: var(--corFundo);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+:root{
+    --corFundo: rgb(45, 106, 77);
+    --corHover: rgb(25, 224, 68);
+   
+}
+
+a {
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+
+}
+
+nav{
+    background-color:var(--corFundo);
+    opacity: 0.9;
+    display: flex;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: rgb(24, 71, 53);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+
+}
+nav li a:hover{
+   color: var(--corHover);
+}
+
+.dropdown{
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 40px;
+}
+
+.texto1{
+    color: black;
+    text-align: justify;
+    font-size-adjust: unset;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 600px;
+    top: 20px;
+    margin-right: 200px;
+}
+.imagem1 {
+    display: inline-block;
+    margin-right: 100px;
+    top: 20px;
+    }   
+    .final {
+        display: block;
+        background-color: rgba(9, 8, 8, 0.228);
+        text-align: center;
+        color:rgb(51, 132, 94);
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }

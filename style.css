@@ -1,18 +1,68 @@
 body{
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: rgba(45, 106, 77);
+:root{
+    --corFundo: rgb(45, 106, 77);
+    --corHover: rgb(25, 224, 68);
+   
+}
+
+a {
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+}
+.desfra {
+    border: solid var(--corFundo)
+}
+nav{
+    background-color:var(--corFundo);
     opacity: 0.9;
-    
- }
+    display: flex;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: rgb(24, 71, 53);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+
+}
+nav li a:hover{
+   color: var(--corHover);
+}
+
+.menudrop a{
+    display: block;
+}
+.dropdown{
+    padding-bottom: 120px;
+    padding-right: 10px;
+}
+
+.menudrop{
+    position: absolute;
+    display: none;
+    text-shadow: black, 2px;
+    opacity: 1.0;
+}
+.dropdown:hover .menudrop {
+    display: block;
+     
+}
+
 .logo {
-    background-color: rgba(45, 106, 77);
+    background-color: var(--corFundo);
     background-attachment:scroll;
     opacity: 0.9;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -26,11 +76,7 @@ header {
     
 
 }
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    
-}
+
 
 .tabela {
 
@@ -48,59 +94,24 @@ header {
     display: flex;
     
 }
-.botao1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    color: black;
-    box-shadow: inset 2px 2px 5px 5px rgb(40, 81, 62);
-    display: inline;
-      
-    
-    
-}
-.botao2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    color: black;
-    box-shadow: inset 2px 2px 5px 5px rgb(40, 81, 62);
-    display: inline;
-   }
-.botoes {
-    display: inline-block;
-   
+.sele{
+    border: solid rgb(63, 112, 89);
 }
 
-.texto1{
-    color: black;
-    text-align: justify;
-    font-size-adjust: unset;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    display: inline-block;
-    width: 350px;
-    height: 600px;
-    top: 20px;
-    margin-right: 200px;
-}
-.imagem1 {
-    display: inline-block;
-    margin-right: 100px;
-    top: 20px;
-    }   
+
 .desfralde{
-    background-color: rgb(224, 219, 219);
-    
+   background-color: var(--corFundo);
+   padding-top: 35px;
+   padding-bottom: 35px;
 }  
+
+.desfralde a{
+    text-decoration: none;
+    color: black;
+}
+.desfralde a :hover {
+    color: var(--corHover);
+}
 .caixatexto {
     position: relative;
     bottom: 600px;
@@ -110,8 +121,7 @@ header {
     flex: 0;
     box-sizing: border-box;
     width:50%;
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 
 
@@ -141,33 +151,30 @@ header {
 }
 
 .seletividade {
-    background-color: rgb(40, 81, 62);
-    padding: 15px;
+    background-color: rgb(63, 112, 89);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-decoration: none;
+    color: antiquewhite;
 }
-.texto2 {
-    color: aliceblue;
-    text-align: justify;
-    font-size-adjust: unset;
-    position: relative;
-    display: flex;
-    padding: 10px;
-    justify-content: flex-start;
-    
+
+.seletividade a :hover {
+    color: var(--corHover);
 }
-.imagem2{
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
+.seletividade a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
 }
+
+
+
 .titulo {
     color: aliceblue;
 }
 .sintomas{
     background-color: aliceblue;
 }
-.imagem2, .texto2{
-    display: inline-block;
-}
+
 .final {
     display: block;
     background-color: rgba(9, 8, 8, 0.228);
@@ -175,4 +182,8 @@ header {
     color:rgb(51, 132, 94);
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.insta{
+    text-decoration: none;
+    border: solid rgba(239, 242, 245, 0.295);
 }

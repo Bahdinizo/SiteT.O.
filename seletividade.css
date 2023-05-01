@@ -1,0 +1,88 @@
+
+* {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    background-color: var(--corFundo);
+    color:rgb(246, 249, 251)
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+:root{
+    --corFundo: rgb(45, 106, 77);
+    --corHover: rgb(25, 224, 68);
+   
+}
+
+a {
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+
+}
+
+nav{
+    background-color:var(--corFundo);
+    opacity: 0.9;
+    display: flex;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: rgb(24, 71, 53);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+
+}
+nav li a:hover{
+   color: var(--corHover);
+}
+
+.dropdown{
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 40px;
+}
+
+.texto2 {
+    color: rgb(246, 249, 251);
+    text-align: justify;
+    font-size-adjust: unset;
+    font-size: large;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+   
+    
+}
+.imagem2{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.imagem2, .texto2{
+    display: inline-block;
+}
+
+.final {
+    display: block;
+    background-color: rgba(9, 8, 8, 0.228);
+    text-align: center;
+    color:rgb(51, 132, 94);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
