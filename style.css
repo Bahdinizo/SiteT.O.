@@ -14,10 +14,6 @@ body{
    
 }
 
-a {
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
-}
 .desfra {
     border: solid var(--corFundo)
 }
@@ -44,10 +40,21 @@ nav li a:hover{
 
 .menudrop a{
     display: block;
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
 }
 .dropdown{
     padding-bottom: 120px;
     padding-right: 10px;
+}
+.dropdown a{
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+}
+
+.is a{
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
 }
 
 .menudrop{
@@ -76,7 +83,6 @@ header {
     
 
 }
-
 
 .tabela {
 
@@ -143,8 +149,8 @@ header {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
-    
 }
+
 .marca {
     color: rgb(6, 5, 5);
     margin: 0;
@@ -166,8 +172,6 @@ header {
     color: rgb(8, 8, 8);
 }
 
-
-
 .titulo {
     color: aliceblue;
 }
@@ -186,4 +190,73 @@ header {
 .insta{
     text-decoration: none;
     border: solid rgba(239, 242, 245, 0.295);
+}
+
+
+main.cards{
+    display: flex;
+    padding: 30px;
+}
+
+main.cards section.card:hover{
+    transform: rotateZ(15deg);
+}
+
+main.cards section.card .icon{
+    width: 100px;
+    height: 90px;
+
+}
+main.cards section.card img{
+    width: 100%;
+    
+}
+
+main.cards section.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border-color: aliceblue;
+    max-height: 300px;
+    max-width: 400px;
+    margin-left: 20px; 
+}
+
+main.cards section.card button{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(68, 190, 68), rgb(119, 170, 146));
+}
+
+main.cards section.card button, a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main.cards section.card{
+    box-shadow: 15px 15px 30px -5px green;
+    display: flex;
+}
+
+main.cards section.card h3, span, p{
+    font-size: 100%;
+}
+
+@media screen and (max-width: 700px){
+    main.cards{
+        flex-direction: column;
+    }
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+  
 }
