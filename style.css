@@ -3,6 +3,12 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+fieldset{
+    border: 5px rgb(56, 127, 99) solid;
+    border-radius: 10px;
+    width:55%;
+    opacity: 0.6;
+}
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -191,7 +197,7 @@ header {
     text-decoration: none;
     border: solid rgba(239, 242, 245, 0.295);
 }
-
+/*cards*/
 
 main.cards{
     display: flex;
@@ -223,7 +229,7 @@ main.cards section.card{
     border-color: aliceblue;
     max-height: 300px;
     max-width: 400px;
-    margin-left: 20px; 
+    margin-left: 30px; 
 }
 
 main.cards section.card button{
@@ -259,4 +265,74 @@ main.cards section.card h3, span, p{
         margin-bottom: 30px;
     }
   
+}
+/* carrosel */
+
+section.carrosel{
+    margin-left: 0;
+    margin-right:0;
+    height: 600px;
+    width: 1040px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    border: 2px solid green;
+    border-radius: 20px;
+    
+    
+}
+.carrosel1{
+    height: 600px;
+    width: 402%;
+    display: flex;   
+    margin: 0;
+      
+}
+
+.carrosel1 input{
+    display: none;
+}
+.container-carrosel{
+   position: relative;
+   text-align: center;
+   width: 25%;
+
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    margin-top: 37%;
+    width: 1040px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual, .nav-auto div{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-manual .manual:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 5px;
+}
+
+.nav-manual .manual:hover{
+    background-color: rgb(51, 132, 94);
+}
+#carrosel1:checked ~.nav-auto .auto1, #carrosel2:checked ~.nav-auto .auto2, #carrosel3:checked ~.nav-auto .auto3{
+    background-color: rgb(51, 132, 94);
+}
+
+#carrosel1:checked ~ .primeiroc{
+    margin-left: 0%;
+}
+#carrosel2:checked ~ .primeiroc{
+    margin-left: -25%;
+}
+
+#carrosel3:checked ~ .primeiroc{
+    margin-left: -50%;
 }
