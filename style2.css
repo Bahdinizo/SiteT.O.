@@ -48,7 +48,30 @@ nav li a:hover{
 .dropdown{
     padding-bottom: 25px;
     padding-right: 10px;
-    padding-left: 40px;
+    padding-left: 10px;
+}
+.menudrop a{
+    display: block;
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+}
+.dropdown{
+    padding-bottom: 120px;
+    padding-right: 10px;
+}
+.dropdown a{
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+}
+
+.menudrop{
+    position: absolute;
+    display: none;
+    text-shadow: black, 2px;
+    opacity: 1.0;
+}
+.dropdown:hover .menudrop {
+    display: block;
 }
 
 .img {
