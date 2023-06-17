@@ -21,13 +21,31 @@
     <nav>
         <ul>
              <li class="dropdown"> <a href="index.html" onclick="funcao1()" accesskey="h"> Terapia Ocupacional </a> 
+                <div class="menudrop">
+                    <a href="dicasdesfralde.html"> Desfralde </a>
+                    <a href="seletividade.html"> Seletividade </a>
+                </div>
              </li>
-            <li> <a href="index2.html"onclick="funcao2()" accesskey="i"> Integração Sensorial </a> 
+                                   
+             <li class="dropdown"> <a href="index2.html"onclick="funcao2()" accesskey="i"> Integração Sensorial </a> </li>
+                
              </li>
+             <li class="dropdown"> <a href="fotos.html" accesskey="f"> Albúm Fotos </a> </li>
+             
+          </li>
         </ul>
     
-    </nav>  
+    </nav>   
     <h1>Dicas para o Desfralde</h1>
+    <!--- Botão para verificar idade do desfralde --->
+    <div class="iteração">    
+        <h2> Primeiro verifique abaixo se seu filho já tem idade para iniciar o processo de desfralde:</h2>
+           <label for="n1"> Idade: </label>  
+           <input type="number" id="idade"/>
+         <button class="itera" onclick="VerificaIdade()"> Verificar </button>
+    </div>
+
+    <!-- Imagem e descrição sobre o desfralde-->
         <div class="imagem1">
             <img src="desfralde.jpg" alt="Ilustração de um menino pulando em comemoração à ida independente ao banheiro, ao lado o vaso sanitário e o papel higiênico" width="540" height="540">    
         </div>
@@ -61,7 +79,7 @@
         O desfralde é um processo que exige treino diário e paciência. 
         Se precisar de ajuda com o desfralde, procure um terapeuta ocupacional! </p>
         </h2></div> 
-        </div>
+    </div>
 
     <div class="final">
 
@@ -72,5 +90,7 @@
                  <img src="Instagram-Icon.png" alt="Foto do logo do instagram, para dar acesso ao instagram" height="50" width="50"> <a href="https://www.google.com/">@bahdinizo</a>
              </footer>
      </div>
+
+<script src="desfralde.js"></script>
 </body>
 </html>

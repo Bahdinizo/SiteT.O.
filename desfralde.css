@@ -13,6 +13,17 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
+/* Iteração JavaScript */
+.iteração{
+    text-align: center;
+    
+}
+.itera{
+    border-color: var(--corFundo);
+    border-radius: 1px;
+    color: var(--corHover);
+    text-decoration: none;
+}
 
 :root{
     --corFundo: rgb(45, 106, 77);
@@ -20,12 +31,7 @@ body{
    
 }
 
-a {
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
-
-}
-
+/* Botões */
 nav{
     background-color:var(--corFundo);
     opacity: 0.9;
@@ -47,12 +53,29 @@ nav li a:hover{
    color: var(--corHover);
 }
 
+.menudrop a{
+    display: block;
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
+}
 .dropdown{
-    padding-bottom: 25px;
+    padding-bottom: 120px;
     padding-right: 10px;
-    padding-left: 40px;
+}
+.dropdown a{
+    border: solid rgb(47, 216, 78);
+    border-radius: 1px;
 }
 
+.menudrop{
+    position: absolute;
+    display: none;
+    text-shadow: black, 2px;
+    opacity: 1.0;
+}
+.dropdown:hover .menudrop {
+    display: block;
+}   
 .texto1{
     color: black;
     text-align: justify;
