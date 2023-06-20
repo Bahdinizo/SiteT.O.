@@ -1,139 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 * {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0px;
 }
-body{
-    margin: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+  font-family: "Poppins", sans-serif, "Times New Roman";
+  text-align: center;
 }
 
-:root{
-    --corFundo: rgb(45, 106, 77);
-    --corHover: rgb(25, 224, 68);
-   
+:root {
+  --corFundo: rgb(45, 106, 77);
+  --corHover: rgb(25, 224, 68);
 }
 
 a {
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
-
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
 }
 
-nav{
-    background-color:var(--corFundo);
-    opacity: 0.9;
-    display: flex;
+nav {
+  background-color: var(--corFundo);
+  opacity: 0.9;
+  display: flex;
 }
 
-nav li{
-    display: inline-block;
+nav li {
+  display: inline-block;
 }
 
-nav li a{
-    color: rgb(24, 71, 53);
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-
+nav li a {
+  color: rgb(24, 71, 53);
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
 }
-nav li a:hover{
-   color: var(--corHover);
-}
-
-.dropdown{
-    padding-bottom: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.menudrop a{
-    display: block;
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
-}
-.dropdown{
-    padding-bottom: 120px;
-    padding-right: 10px;
-}
-.dropdown a{
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
+nav li a:hover {
+  color: var(--corHover);
 }
 
-.menudrop{
-    position: absolute;
-    display: none;
-    text-shadow: black, 2px;
-    opacity: 1.0;
+.dropdown {
+  padding-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.menudrop a {
+  display: block;
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
+}
+.dropdown {
+  padding-bottom: 120px;
+  padding-right: 10px;
+}
+.dropdown a {
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
+}
+
+.menudrop {
+  position: absolute;
+  display: none;
+  text-shadow: black, 2px;
+  opacity: 1;
 }
 .dropdown:hover .menudrop {
-    display: block;
+  display: block;
 }
 
 .img {
-    padding: 0px;
-    margin: 0px;
-    opacity: 0.9;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.9;
 }
-  
+
 .caixatexto2 {
-    position: relative;
-    bottom: 600px;
-    left: 550px;
-    border-radius: 10px;
-    display: flex;
-    flex: 0;
-    box-sizing: border-box;
-    width:50%;
-    
+  position: relative;
+  bottom: 600px;
+  left: 550px;
+  border-radius: 10px;
+  display: flex;
+  flex: 0;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 .integracaoS {
-    display: inline-block;
-    padding: 0px;
-    top: 0px;
+  display: inline-block;
+  padding: 0px;
+  top: 0px;
 }
 .texto3 {
-    float: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    color: rgb(43, 79, 43);
-    margin: 0px;
+  float: right;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: justify;
+  color: rgb(43, 79, 43);
+  margin: 0px;
 }
 .imagem3 {
-    float: left;
-    margin-right: 50px;
+  float: left;
+  margin-right: 50px;
 }
 .superior2 {
-    background-color: rgb(238, 246, 236);
+  background-color: rgb(238, 246, 236);
 }
 .texto4 {
-    float: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    color: rgb(43, 79, 43);
-    margin-top: 100px;
+  float: right;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: justify;
+  color: rgb(43, 79, 43);
+  margin-top: 100px;
 }
-.imagem4{
-    float: left;
-    margin-bottom: 200px;
-    margin-top: 100px;
-    margin-right: 50px; ;
+.imagem4 {
+  float: left;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  margin-right: 50px;
 }
 .profissional {
-    display: inline-block;
+  display: inline-block;
 }
 .insta {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-top: 100px;
-    display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 100px;
+  display: inline-block;
 }
 .cs {
-    color: aliceblue;
-    font-size: 70px;
+  color: aliceblue;
+  font-size: 70px;
+}
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 20px;
+  }
+  nav .dropdown .menudrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav .dropdown {
+    padding-bottom: 130px;
+  }
+  iframe {
+    width: 290px;
+    height: 190px;
+  }
+  .imagem3 img {
+    width: 230px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+  }
+  .imagem4 img {
+    width: 230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+  }
+  .caixatexto2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  footer p {
+    font-size: 30px;
+  }
+  nav .dropdown .menudrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav .dropdown {
+    padding-bottom: 130px;
+  }
+  .caixatexto2 {
+    display: none;
+  }
+  .imagem3 img {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+  }
+  .imagem4 img {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+  }
 }

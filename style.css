@@ -1,336 +1,419 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-fieldset{
-    border: 5px rgb(56, 127, 99) solid;
-    border-radius: 10px;
-    width:55%;
-    opacity: 0.6;
+fieldset {
+  border: 5px rgb(56, 127, 99) solid;
+  border-radius: 10px;
+  width: 55%;
+  opacity: 0.6;
 }
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+  font-family: "Poppins", sans-serif, "Times New Roman";
+  text-align: center;
 }
 
-:root{
-    --corFundo: rgb(45, 106, 77);
-    --corHover: rgb(25, 224, 68);
-   
+:root {
+  --corFundo: rgb(45, 106, 77);
+  --corHover: rgb(25, 224, 68);
 }
 
 .desfra {
-    border: solid var(--corFundo)
+  border: solid var(--corFundo);
 }
-/* Botões */
-nav{
-    background-color:var(--corFundo);
-    opacity: 0.9;
-    display: flex;
-}
-
-nav li{
-    display: inline-block;
+/* MENU */
+nav {
+  background-color: var(--corFundo);
+  opacity: 0.9;
+  display: flex;
 }
 
-nav li a{
-    color: rgb(24, 71, 53);
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-
-}
-nav li a:hover{
-   color: var(--corHover);
+nav li {
+  display: inline-block;
 }
 
-.menudrop a{
-    display: block;
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
+nav li a {
+  color: rgb(24, 71, 53);
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
 }
-.dropdown{
-    padding-bottom: 120px;
-    padding-right: 10px;
-}
-.dropdown a{
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
+nav li a:hover {
+  color: var(--corHover);
 }
 
-.menudrop{
-    position: absolute;
-    display: none;
-    text-shadow: black, 2px;
-    opacity: 1.0;
+.menudrop a {
+  display: block;
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
+}
+.dropdown {
+  padding-bottom: 120px;
+  padding-right: 10px;
+}
+.dropdown a {
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
+}
+
+.menudrop {
+  position: absolute;
+  display: none;
+  text-shadow: black, 2px;
+  opacity: 1;
 }
 .dropdown:hover .menudrop {
-    display: block;
-     
+  display: block;
 }
 
 /* logo tipo*/
 
 .logo {
-    background-color: var(--corFundo);
-    background-attachment:scroll;
-    opacity: 0.9;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    
+  background-color: var(--corFundo);
+  background-attachment: scroll;
+  opacity: 0.9;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    
-
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .tabela {
-
-    display: table;
-    float: left;
-    box-sizing: border-box;
-    margin-left: 380px;
-    margin-bottom: 30px;
-
+  display: table;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 380px;
+  margin-bottom: 30px;
 }
 
 .superiorBaixo {
-    background-color: rgb(40, 81, 62);
-    padding: 50px;
-    display: flex;
-    
+  background-color: rgb(40, 81, 62);
+  padding: 50px;
+  display: flex;
 }
-.sele{
-    border: solid rgb(63, 112, 89);
+.sele {
+  border: solid rgb(63, 112, 89);
 }
 
+.desfralde {
+  background-color: var(--corFundo);
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
 
-.desfralde{
-   background-color: var(--corFundo);
-   padding-top: 35px;
-   padding-bottom: 35px;
-}  
-
-.desfralde a{
-    text-decoration: none;
-    color: black;
+.desfralde a {
+  text-decoration: none;
+  color: black;
 }
 .desfralde a :hover {
-    color: var(--corHover);
+  color: var(--corHover);
 }
 .caixatexto {
-    position: relative;
-    bottom: 600px;
-    left: 550px;
-    border-radius: 10px;
-    display: flex;
-    flex: 0;
-    box-sizing: border-box;
-    width:50%;
-    font-size: 20px;  
+  position: relative;
+  bottom: 600px;
+  left: 550px;
+  border-radius: 10px;
+  display: flex;
+  flex: 0;
+  box-sizing: border-box;
+  width: 50%;
+  font-size: 20px;
 }
-
 
 .foto {
   flex: 1;
-   
 }
 .descricao {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
-    text-align: justify;
-    text-size-adjust: unset;
-    display: flex;
-    flex: 3;    
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  text-align: justify;
+  text-size-adjust: unset;
+  display: flex;
+  flex: 3;
 }
 
-.charme, .charme2{
-    background-color: white;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px;
+.charme,
+.charme2 {
+  background-color: white;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
 }
 
 .marca {
-    color: rgb(6, 5, 5);
-    margin: 0;
+  color: rgb(6, 5, 5);
+  margin: 0;
 }
 
 .seletividade {
-    background-color: rgb(63, 112, 89);
-    padding-top: 35px;
-    padding-bottom: 35px;
-    text-decoration: none;
-    color: antiquewhite;
+  background-color: rgb(63, 112, 89);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-decoration: none;
+  color: antiquewhite;
 }
 
 .seletividade a :hover {
-    color: var(--corHover);
+  color: var(--corHover);
 }
 .seletividade a {
-    text-decoration: none;
-    color: rgb(8, 8, 8);
+  text-decoration: none;
+  color: rgb(8, 8, 8);
 }
 
 .titulo {
-    color: aliceblue;
+  color: aliceblue;
 }
-.sintomas{
-    background-color: aliceblue;
+.sintomas {
+  background-color: aliceblue;
 }
 
 .final {
-    display: block;
-    background-color: rgba(9, 8, 8, 0.228);
-    text-align: center;
-    color:rgb(51, 132, 94);
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  background-color: rgba(9, 8, 8, 0.228);
+  text-align: center;
+  color: rgb(51, 132, 94);
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.insta{
-    text-decoration: none;
-    border: solid rgba(239, 242, 245, 0.295);
+.insta {
+  text-decoration: none;
+  border: solid rgba(239, 242, 245, 0.295);
 }
 /*cards*/
 
-main.cards{
-    display: flex;
-    padding: 30px;
+main.cards {
+  display: flex;
+  padding: 30px;
 }
 
-main.cards section.card:hover{
-    transform: rotateZ(15deg);
+main.cards section.card:hover {
+  transform: rotateZ(15deg);
 }
 
-main.cards section.card .icon{
-    width: 100px;
-    height: 90px;
-
+main.cards section.card .icon {
+  width: 100px;
+  height: 90px;
 }
-main.cards section.card img{
-    width: 100%;
-    
+main.cards section.card img {
+  width: 100%;
 }
 
-main.cards section.card{
-    display: flex;
-    align-items: center;
+main.cards section.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-color: aliceblue;
+  max-height: 300px;
+  max-width: 400px;
+  margin-left: 30px;
+}
+
+main.cards section.card button {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(68, 190, 68), rgb(119, 170, 146));
+}
+
+main.cards section.card button,
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+main.cards section.card {
+  box-shadow: 15px 15px 30px -5px green;
+  display: flex;
+}
+
+main.cards section.card h3,
+span,
+p {
+  font-size: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  main.cards {
     flex-direction: column;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    border-color: aliceblue;
-    max-height: 300px;
-    max-width: 400px;
-    margin-left: 30px; 
-}
-
-main.cards section.card button{
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 15px;
-    cursor: pointer;
-    font-weight: 600;
-    background: linear-gradient(to right, rgb(68, 190, 68), rgb(119, 170, 146));
-}
-
-main.cards section.card button, a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-main.cards section.card{
-    box-shadow: 15px 15px 30px -5px green;
-    display: flex;
-}
-
-main.cards section.card h3, span, p{
-    font-size: 100%;
-}
-
-@media screen and (max-width: 700px){
-    main.cards{
-        flex-direction: column;
-    }
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 30px;
-    }
-  
+  }
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
 }
 /* carrosel */
 
-section.carrosel{
+section.carrosel {
+  margin-left: 0;
+  margin-right: 0;
+  height: 600px;
+  width: 1040px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-left: 250px;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+.carrosel1 {
+  height: 600px;
+  width: 402%;
+  display: flex;
+  margin: 0;
+}
+
+.carrosel1 input {
+  display: none;
+}
+.container-carrosel {
+  position: relative;
+  text-align: center;
+  width: 25%;
+}
+
+.nav-manual,
+.nav-auto {
+  position: absolute;
+  margin-top: 37%;
+  width: 1040px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual,
+.nav-auto div {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-manual .manual:not(:last-child),
+.nav-auto div:not(:last-child) {
+  margin-right: 5px;
+}
+
+.nav-manual .manual:hover {
+  background-color: rgb(51, 132, 94);
+}
+#carrosel1:checked ~ .nav-auto .auto1,
+#carrosel2:checked ~ .nav-auto .auto2,
+#carrosel3:checked ~ .nav-auto .auto3 {
+  background-color: rgb(51, 132, 94);
+}
+
+#carrosel1:checked ~ .primeiroc {
+  margin-left: 0%;
+}
+#carrosel2:checked ~ .primeiroc {
+  margin-left: -25%;
+}
+
+#carrosel3:checked ~ .primeiroc {
+  margin-left: -50%;
+}
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .logo .caixatexto {
+    display: none;
+  }
+  .superiorBaixo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .carrosel {
+    display: none;
+  }
+  .tabela {
+    display: none;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav .dropdown {
+    padding-bottom: 130px;
+  }
+  .pintura {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .logo img {
+    width: 550px;
+    height: 450px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .logo .caixatexto {
+    display: none;
+  }
+  .superiorBaixo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  section.carrosel {
     margin-left: 0;
-    margin-right:0;
-    height: 600px;
-    width: 1040px;
+    margin-right: 0;
+    height: 300px;
+    width: 520px;
     overflow: hidden;
     margin-bottom: 50px;
-    margin-left: 250px;
+    margin-left: 140px;
+    text-align: center;
     border: 2px solid green;
     border-radius: 20px;
-    
-    
-}
-.carrosel1{
-    height: 600px;
-    width: 402%;
-    display: flex;   
-    margin: 0;
-      
-}
-
-.carrosel1 input{
-    display: none;
-}
-.container-carrosel{
-   position: relative;
-   text-align: center;
-   width: 25%;
-
-}
-
-.nav-manual, .nav-auto{
-    position: absolute;
-    margin-top: 37%;
-    width: 1040px;
+  }
+  .carrosel1 {
+    height: 300px;
+    width: 201%;
     display: flex;
-    justify-content: center;
-}
+    flex: 0;
+    align-items: center;
+    margin: 0;
+  }
+  .tabela {
+    display: none;
+  }
+  footer p {
+    font-size: 30px;
+  }
+  nav .dropdown .menudrop a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav .dropdown {
+    padding-bottom: 130px;
+  }
 
-.nav-manual .manual, .nav-auto div{
-    border: 1px solid rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.nav-manual .manual:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 5px;
-}
-
-.nav-manual .manual:hover{
-    background-color: rgb(51, 132, 94);
-}
-#carrosel1:checked ~.nav-auto .auto1, #carrosel2:checked ~.nav-auto .auto2, #carrosel3:checked ~.nav-auto .auto3{
-    background-color: rgb(51, 132, 94);
-}
-
-#carrosel1:checked ~ .primeiroc{
-    margin-left: 0%;
-}
-#carrosel2:checked ~ .primeiroc{
-    margin-left: -25%;
-}
-
-#carrosel3:checked ~ .primeiroc{
-    margin-left: -50%;
+  .pintura {
+    height: 400px;
+  }
 }

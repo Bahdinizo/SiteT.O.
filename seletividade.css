@@ -1,88 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 * {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0px;
-    background-color: var(--corFundo);
-    color:rgb(246, 249, 251)
+  text-align: center;
+  font-family: "Poppins", "Times New Roman", serif;
+  padding: 0px;
+  background-color: var(--corFundo);
+  color: rgb(246, 249, 251);
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 
-:root{
-    --corFundo: rgb(45, 106, 77);
-    --corHover: rgb(25, 224, 68);
-   
+:root {
+  --corFundo: rgb(45, 106, 77);
+  --corHover: rgb(25, 224, 68);
 }
 
 a {
-    border: solid rgb(47, 216, 78);
-    border-radius: 1px;
-
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
 }
 
-nav{
-    background-color:var(--corFundo);
-    opacity: 0.9;
-    display: flex;
+nav {
+  background-color: var(--corFundo);
+  opacity: 0.9;
+  display: flex;
 }
 
-nav li{
-    display: inline-block;
+nav li {
+  display: inline-block;
 }
 
-nav li a{
-    color: rgb(24, 71, 53);
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-
+nav li a {
+  color: rgb(24, 71, 53);
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
 }
-nav li a:hover{
-   color: var(--corHover);
+nav li a:hover {
+  color: var(--corHover);
 }
 
-.dropdown{
-    padding-bottom: 25px;
-    padding-right: 10px;
-    padding-left: 40px;
+.dropdown {
+  padding-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.menudrop a {
+  display: block;
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
+}
+.dropdown {
+  padding-bottom: 120px;
+  padding-right: 10px;
+}
+.dropdown a {
+  border: solid rgb(47, 216, 78);
+  border-radius: 1px;
+}
+
+.menudrop {
+  position: absolute;
+  display: none;
+  text-shadow: black, 2px;
+  opacity: 1;
+}
+.dropdown:hover .menudrop {
+  display: block;
 }
 
 .texto2 {
-    color: rgb(246, 249, 251);
-    text-align: justify;
-    font-size-adjust: unset;
-    font-size: large;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    justify-content: space-between;
-   
-    
+  color: rgb(246, 249, 251);
+  text-align: justify;
+  font-size-adjust: unset;
+  font-size: large;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
 }
-.imagem2{
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
+.imagem2 {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
 }
-.imagem2, .texto2{
-    display: inline-block;
+.imagem2,
+.texto2 {
+  display: inline-block;
 }
 
 .final {
-    display: block;
-    background-color: rgba(9, 8, 8, 0.228);
+  display: block;
+  background-color: rgba(9, 8, 8, 0.228);
+  text-align: center;
+  color: rgb(51, 132, 94);
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .seletividade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color:rgb(51, 132, 94);
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+  }
+  .final {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    width: 110%;
+    height: 200px;
+  }
+  h2,
+  h4 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .seletividade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .final {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  h2,
+  h4 {
+    font-size: 15px;
+  }
 }
