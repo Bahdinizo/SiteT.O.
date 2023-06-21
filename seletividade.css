@@ -109,6 +109,14 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  nav .dropdown .menudrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav .dropdown {
+    padding-bottom: 140px;
+  }
   .seletividade {
     display: flex;
     flex-direction: column;

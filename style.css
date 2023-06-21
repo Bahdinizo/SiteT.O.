@@ -84,10 +84,10 @@ header {
 
 .tabela {
   display: table;
-  float: left;
+  align-items: center;
   box-sizing: border-box;
-  margin-left: 380px;
   margin-bottom: 30px;
+  margin-left: 200px;
 }
 
 .superiorBaixo {
@@ -350,13 +350,14 @@ section.carrosel {
   footer p {
     font-size: 20px;
   }
-  nav a {
+  nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+
   nav .dropdown {
-    padding-bottom: 130px;
+    padding-bottom: 140px;
   }
   .pintura {
     height: 300px;

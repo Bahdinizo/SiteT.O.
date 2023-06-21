@@ -117,4 +117,7 @@ footer {
   footer {
     height: 200px;
   }
+  nav .dropdown {
+    padding-bottom: 140px;
+  }
 }
