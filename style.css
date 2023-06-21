@@ -81,7 +81,7 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-
+/*TABLE*/
 .tabela {
   display: table;
   align-items: center;
@@ -89,12 +89,17 @@ header {
   margin-bottom: 30px;
   margin-left: 200px;
 }
+/*Foto com as descrições, apresentação*/
 
 .superiorBaixo {
   background-color: rgb(40, 81, 62);
   padding: 50px;
   display: flex;
 }
+.foto {
+  flex: 1;
+}
+/*HIPERLINKS*/
 .sele {
   border: solid rgb(63, 112, 89);
 }
@@ -112,6 +117,8 @@ header {
 .desfralde a :hover {
   color: var(--corHover);
 }
+
+/* TEXTO*/
 .caixatexto {
   position: relative;
   bottom: 600px;
@@ -123,10 +130,6 @@ header {
   width: 50%;
   font-size: 20px;
 }
-
-.foto {
-  flex: 1;
-}
 .descricao {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: aliceblue;
@@ -136,6 +139,7 @@ header {
   flex: 3;
 }
 
+/*DICAS*/
 .charme,
 .charme2 {
   background-color: white;

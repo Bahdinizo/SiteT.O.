@@ -26,13 +26,14 @@ body {
 .itera:hover {
   transform: scale(1.1);
 }
+/*Variáveis cores site*/
 
 :root {
   --corFundo: rgb(45, 106, 77);
   --corHover: rgb(25, 224, 68);
 }
 
-/* Botões */
+/* MENU */
 nav {
   background-color: var(--corFundo);
   opacity: 0.9;
@@ -90,7 +91,7 @@ nav li a:hover {
 .imagem1 {
   display: inline-block;
   margin-right: 100px;
-  top: 20px;
+  padding-top: 30px;
 }
 .final {
   display: block;
